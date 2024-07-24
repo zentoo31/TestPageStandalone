@@ -1,0 +1,16 @@
+   
+<div class="col" >  
+   <div class="card" style="width: 18rem;">
+        <img 
+        [src]="housingLocation.photo"
+         class="card-img-top img-fluid" 
+         alt="Exterior photo of {{ housingLocation.name }}"
+         crossorigin
+         style="max-height: 150px; object-fit: cover;">
+        <div class="card-body" style="background-color: #d3d6e1;">
+            <h6 class = "card-title" style="color: #041F86">{{housingLocation.name}}</h6>
+            <p class="card-text">{{ housingLocation.city }}, {{ housingLocation.state }}</p>
+            <a [routerLink]="['/details', housingLocation.id]" class="card-link">Learn More</a>
+        </div>
+    </div>
+</div>

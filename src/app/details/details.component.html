@@ -1,0 +1,20 @@
+<article>
+    <img 
+    class="listening-photo"
+    [src]="housinglocation?.photo"
+    alt="Exterior photo of {{housinglocation?.name}}"
+    crossorigin
+    />
+    <section class="listening-description">
+        <h2 class="listening-heading">{{housinglocation?.name}}</h2>
+        <p class="listening-location">{{housinglocation?.city}}</p>
+    </section>
+    <section class="listening-features">
+        <h2 class="section-heading">About  this location</h2>
+        <ul>
+            <li>Units abailable: {{housinglocation?.availableUnits}} </li>
+            <li>Does this location have wifi: {{housinglocation?.wifi}}</li>
+            <li>Does this location have laundry: {{housinglocation?.laundry}}</li>
+        </ul>
+    </section>
+</article>
