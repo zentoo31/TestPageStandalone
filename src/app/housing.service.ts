@@ -22,4 +22,5 @@ export class HousingService {
       `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
     );
   }
+  
 }

@@ -10,8 +10,7 @@
 </div>
 
 <div class="row row-cols-auto">
-        <app-housing-location style="margin: 5px;"
-            *ngFor="let housingLocation of filteredLocationList"
-            [housingLocation]="housingLocation"
-        ></app-housing-location>
+    @for (housingLocation of filteredLocationList; track housingLocation.id) {
+        <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+    }
 </div>
