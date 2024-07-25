@@ -1,17 +1,17 @@
 <div style="margin: 5px;">
     <form class="row g-3">
         <div class="col-auto">
-            <input class="form-control" type="text" placeholder="Filter by city" aria-label="default input example">
+            <input class="form-control" type="text" placeholder="Filter by city" aria-label="default input example" #filter>
         </div>
         <div class="col-auto">
-            <button type="button" class="btn btn-primary mb-3" style="background-color: #041F86;">Search</button>
+            <button type="button" class="btn btn-primary mb-3" style="background-color: #041F86;" (click)="filterResults(filter.value)">Search</button>
         </div>
     </form>
 </div>
 
-    <div class="row row-cols-auto">
+<div class="row row-cols-auto">
         <app-housing-location style="margin: 5px;"
-            *ngFor="let housingLocation of housingLocationList"
+            *ngFor="let housingLocation of filteredLocationList"
             [housingLocation]="housingLocation"
         ></app-housing-location>
-    </div>
+</div>

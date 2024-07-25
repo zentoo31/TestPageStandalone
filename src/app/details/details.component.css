@@ -1,3 +1,4 @@
+
 .listening-photo {
     height: 600px;
     width: 50%;
@@ -39,7 +40,7 @@
     display: block;
   }
   label {
-    color: var(--secondary-color);
+    color: #041F86;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12pt;
@@ -49,11 +50,12 @@
     margin-bottom: 15px;
     padding: 10px;
     width: 400px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: solid .3px;
+    border-color: #000;
   }
+  article{
+    margin: 2%;
+  }
+
   @media (max-width: 1024px) {
     .listing-photo {
       width: 100%;
